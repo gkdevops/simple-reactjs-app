@@ -16,5 +16,11 @@ pipeline {
             }
         }
       
+        stage('npm run') {
+            steps {
+                echo "this is stage 3"
+            }
+        }
+        
     }
 }
