@@ -15,6 +15,15 @@ pipeline {
                 sh 'npm install'
             }
         }
-      
+     
+        stage('npm run') {
+            when { 
+                branch 'feature-2'
+            }
+            steps {
+                echo "this is stage 3"
+            }
+        }
+        
     }
 }
